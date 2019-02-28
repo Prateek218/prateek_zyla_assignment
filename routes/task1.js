@@ -5,10 +5,10 @@ var localStorage = require('localStorage');
 router.post('/', function(req, res, next) {
     if(req.body.task == "task2" || req.body.task == "task3"){
         localStorage.setItem(req.body.task, req.body.position);
-        console.log("Hi Data Reecived"+localStorage.getItem(req.body.task));
+        // console.log("Hi Data Reecived"+localStorage.getItem(req.body.task));
     }else{
         localStorage.setItem(req.body.task, req.body.position);
-        console.log("Hi Data Reecived"+localStorage.getItem(req.body.task));
+        // console.log("Hi Data Reecived"+localStorage.getItem(req.body.task));
     }
     res.end();
 //   res.render('index', { title: 'Express' });
